@@ -24,3 +24,6 @@
 *.nav
 *.vrb
 *.synctex.gz
+presentation.pdf
+presentation.fls
+presentation.fdb_latexmk
