@@ -213,9 +213,9 @@
 
 \section{Introduction}
 
-\subsection{Cautionary tales}
+\subsection{Cautionary tale}
 
-\begin{frame}{A cautionnary tale}
+\begin{frame}{A cautionary tale}
 Once upon a time...
 \end{frame}
 
@@ -232,7 +232,7 @@ Once upon a time...
     \begin{alertblock}{Reproducibility}
     \begin{enumerate}
         \item<3-> Concrete and widespread
-        \item<4-> Mainstream tools do don't this well
+        \item<4-> Not handled well by mainstream tools
     \end{enumerate}
     \end{alertblock}
 }
@@ -275,6 +275,10 @@ Once upon a time...
 \end{frame}
 
 \begin{frame}
+What if the princess had access to a version packaged by Nix?
+\end{frame}
+
+\begin{frame}
     \begin{block}{Principles}
         \begin{enumerate}
             \item<2-> \couleur{blue-portage}{Describe} a package and its
@@ -284,7 +288,7 @@ Once upon a time...
 \end{frame}
 
 \begin{frame}[fragile]{Describing}
-\begin{lstlisting}[language=Nix,title={gh-from-shoe-1-0.drv}]
+\begin{lstlisting}[language=Nix,title={gh-from-shoe-1-0.drv (generated)}]
 Derive(
   [("out","/nix/store/qya..-gh-from-shoe","","")],
   [
@@ -348,11 +352,11 @@ Derive(
 }
 \end{frame}
 
-\begin{frame}{Sharing}
-\begin{center}
-    \includegraphics[width=0.95\textwidth]{img/schema-nix-store-sharing.pdf}
-\end{center}
-\end{frame}
+% \begin{frame}{Sharing}
+% \begin{center}
+%     \includegraphics[width=0.95\textwidth]{img/schema-nix-store-sharing.pdf}
+% \end{center}
+% \end{frame}
 
 \begin{frame}
     \begin{block}{Principles}
@@ -460,7 +464,7 @@ Derive(
 \end{frame}
 
 \begin{frame}[fragile]{Nix expressions}
-\begin{lstlisting}[language=Nix]
+\begin{lstlisting}[language=Nix,title={gh-from-shoe/defaut.nix}]
 {python2WithOpenCV, opencv, stdenv}:
 $@stdenv.mkDerivation rec {
   pname = "gh-from-shoe-rust";
@@ -477,7 +481,7 @@ $@stdenv.mkDerivation rec {
 \end{frame}
 
 \begin{frame}[fragile]{Derivation: Nix machine code}
-\begin{lstlisting}
+\begin{lstlisting}[title={/nix/store/27az7...gh-from-shoe-1-0.drv}]
 Derive(
   [("out","/nix/store/qya..-gh-from-shoe","","")],
   [
