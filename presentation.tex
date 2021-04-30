@@ -1,12 +1,16 @@
-\documentclass[a4paper]{beamer}
+\documentclass[t, aspectratio=169]{beamer}
 
 %\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{bbm}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{hyperref}
 \usepackage{lmodern,charter,environ}
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{graphicx}
+\setmainfont{Roboto}
+\usetheme{tweag}
 
 \definecolor{yellow-creme-brulee}{rgb}{0.99,0.87,0.50}
 \definecolor{pink-froly}{rgb}{1,0.23,0.35}
@@ -179,7 +183,6 @@
 
 \newcommand{\couleur}[2]{{\color{#1}{#2}}}
 
-\usetheme{metropolis}
 
 \setbeamercolor{progress bar}{fg=orange-vivid-tangerine}
 \setbeamercolor{alerted text}{fg=orange-vivid-tangerine}
