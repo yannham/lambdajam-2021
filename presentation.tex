@@ -1,4 +1,4 @@
-\documentclass[a4paper]{beamer}
+\documentclass[aspectratio=169]{beamer}
 
 %\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -280,7 +280,7 @@
         \includegraphics[width=0.6\textwidth]{img/works-on-my-machine.pdf}
     \end{center}
 
-    \vspace{10pt}
+    \vspace{20pt}
 
     \uncover<2-> {
     \begin{alertblock}{Reproducibility}
@@ -294,26 +294,26 @@
 
 \begin{frame}{The problem}
     \begin{center}
-        \includegraphics[width=0.95\textwidth]{img/schema-build.pdf}
+        \includegraphics[height=0.98\textheight]{img/schema-build.pdf}
     \end{center}
 \end{frame}
 
 \begin{frame}{Looks familiar?}
     \only<1> {
         \begin{center}
-            \includegraphics[width=0.95\textwidth]{img/schema-build-simplified.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-build-simplified.pdf}
         \end{center}
     }
     \only<2> {
         \begin{center}
-            \includegraphics[width=0.95\textwidth]{img/schema-build-functional.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-build-functional.pdf}
         \end{center}
     }
 \end{frame}
 
 \begin{frame}{Functional approach to reproducibility}
     \begin{center}
-        \includegraphics[width=0.95\textwidth]{img/schema-build-functional-correct.pdf}
+        \includegraphics[height=0.98\textheight]{img/schema-build-functional-correct.pdf}
     \end{center}
 \end{frame}
 
@@ -321,10 +321,14 @@
 
 \begin{frame}
     \only<1> {
-        \includegraphics[width=0.95\textwidth]{img/schema-nix-motto-pre.pdf}
+        \begin{center}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-motto-pre.pdf}
+        \end{center}
     }
     \only<2> {
-        \includegraphics[width=0.95\textwidth]{img/schema-nix-motto.pdf}
+        \begin{center}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-motto.pdf}
+        \end{center}
     }
 \end{frame}
 
@@ -339,6 +343,23 @@ What if the princess had access to a version packaged by Nix?
                 dependencies in full
          \end{enumerate}
     \end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Describing}
+\begin{lstlisting}[language=Nix,title={gh-from-shoe/defaut.nix}]
+{python2WithOpenCV, opencv, stdenv}:
+stdenv.mkDerivation rec {
+  pname = "gh-from-shoe-rust";
+  version = "2021-04-30";
+
+  buildInputs = [ python2WithOpenCV opencv ];
+
+  installPhase = ''
+    mkdir -p $out/bin
+    cp ${./main.py} $out/bin/gh-from-shoe
+  '';
+};
+\end{lstlisting}
 \end{frame}
 
 \begin{frame}[fragile]{Describing}
@@ -396,19 +417,24 @@ Derive(
 \begin{frame}{Storing}
     \only<1> {
 \begin{center}
-    \includegraphics[width=0.95\textwidth]{img/schema-nix-store.pdf}
+    \includegraphics[height=0.98\textheight]{img/schema-nix-store.pdf}
 \end{center}
  }
     \only<2> {
 \begin{center}
-    \includegraphics[width=0.95\textwidth]{img/schema-nix-store-link.pdf}
+    \includegraphics[height=0.98\textheight]{img/schema-nix-store-link.pdf}
 \end{center}
+}
+    \only<3> {
+    \begin{center}
+        \includegraphics[height=0.98\textheight]{img/schema-nix-store-sharing.pdf}
+    \end{center}
 }
 \end{frame}
 
 % \begin{frame}{Sharing}
 % \begin{center}
-%     \includegraphics[width=0.95\textwidth]{img/schema-nix-store-sharing.pdf}
+%     \includegraphics[height=0.98\textheight]{img/schema-nix-store-sharing.pdf}
 % \end{center}
 % \end{frame}
 
@@ -431,48 +457,48 @@ Derive(
 \begin{frame}{Cleaning}
     \only<1> {
         \begin{center}
-            \includegraphics[width=0.95\textwidth]{img/schema-nix-store-cleaning-1.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-1.pdf}
         \end{center}
     }
     \only<2> {
         \begin{center}
-            \includegraphics[width=0.95\textwidth]{img/schema-nix-store-cleaning-2.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-2.pdf}
         \end{center}
     }
     \only<3> {
         \begin{center}
-            \includegraphics[width=0.95\textwidth]{img/schema-nix-store-cleaning-3.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-3.pdf}
         \end{center}
     }
     \only<4> {
         \begin{center}
-            \includegraphics[width=0.95\textwidth]{img/schema-nix-store-cleaning-4.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-4.pdf}
         \end{center}
      }
 
     \only<5> {
         \begin{center}
-            \includegraphics[width=0.95\textwidth]{img/schema-nix-store-cleaning-roots.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-roots.pdf}
         \end{center}
     }
     \only<6> {
         \begin{center}
-            \includegraphics[width=0.95\textwidth]{img/schema-nix-store-gc-1.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-1.pdf}
         \end{center}
     }
     \only<7> {
         \begin{center}
-            \includegraphics[width=0.95\textwidth]{img/schema-nix-store-gc-2.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-2.pdf}
         \end{center}
     }
     \only<8> {
         \begin{center}
-            \includegraphics[width=0.95\textwidth]{img/schema-nix-store-gc-3.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-3.pdf}
         \end{center}
     }
     \only<9> {
         \begin{center}
-            \includegraphics[width=0.95\textwidth]{img/schema-nix-store-gc-4.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-4.pdf}
         \end{center}
     }
 \end{frame}
@@ -486,6 +512,15 @@ Derive(
             \item Fearless upgrades: atomic upgrades and rollbacks
         \end{itemize}
     \end{block}
+\end{frame}
+
+\begin{frame}{Limits}
+    \begin{alertblock}{Nix}
+        \begin{itemize}
+            \item Steep learning curve
+            \item Everything has to be "Nixified" (Nixpkgs)
+        \end{itemize}
+    \end{alertblock}
 \end{frame}
 
 \begin{frame}{Functional package management}
@@ -503,6 +538,14 @@ Derive(
     \end{center}
 \end{frame}
 
+\begin{frame}{Usages}
+    \begin{itemize}
+        \item Package management
+        \item NixOS: declarative system configuration (NixOS)
+        \item Nix shell: project-specific environments
+    \end{itemize}
+\end{frame}
+
 \section{Nix expressions}
 
 \begin{frame}
@@ -511,10 +554,10 @@ Derive(
 \end{frame}
 
 \begin{frame}{Nix expressions}
-\begin{center}
-    Nix expressions $=$ \couleur{blue-portage}{JSON} $+$
+    \begin{block}{The Nix language}
+    \couleur{blue-portage}{JSON} $+$
     \couleur{pink-froly}{$\lambda$}
-\end{center}
+\end{block}
 \end{frame}
 
 \begin{frame}[fragile]{Nix expressions}
@@ -558,10 +601,10 @@ Derive(
         \item Object systems (kind of): overriding
         \item A module system: NixOS
         \item Non-trivial algorithms (e.g. topological sort)
-        \item No types
         \item and so on.
       \end{itemize}
     \end{exampleblock}
+    All of this without types!
 \end{frame}
 
 \section{Nickel}
@@ -606,7 +649,7 @@ let Service = {
       (portToUrl server)
       openPorts,
   $}$
-  | Service
+  | #Service
 \end{lstlisting}
 \end{frame}
 
@@ -636,7 +679,7 @@ $}$
     \end{itemize}
 
     \begin{exampleblock}{Example}
-\begin{lstlisting}[language=Nickel]
+\begin{lstlisting}[language=Nickel,title={Heterogeneous data}]
 services = [
   "init",
   {name = "firewall", bin = "/bin/firewall"},
@@ -655,7 +698,7 @@ services = [
     \end{itemize}
 
 \begin{exampleblock}{Example}
-   \begin{lstlisting}[language=Nickel]
+\begin{lstlisting}[language=Nickel,title={Statically typed map}]
 map : forall a b. (a -> b) -> List a -> List b
     = fun f list =>
   if list == [] then []
@@ -695,7 +738,8 @@ Typed code is protected by run-time casts, or \emph{contracts}.
 
 \vspace{10pt}
 
-\begin{lstlisting}[language=Nickel,title={Generated code for \lstinline+add+}]
+\begin{lstlisting}[language=Nickel,title={Generated code for \lstinline+add+
+(simplified)}]
 let safeNum = fun value =>
     if builtins.isNum value then value
     else panic! in
@@ -713,8 +757,7 @@ let addSafe = fun x y =>
 
 \begin{frame}[fragile]{First-class contracts}
 \begin{lstlisting}[language=Nickel]
-let Url =
-  $let pattern = "[-a-zA-Z0-9@:..." in
+let Url = $let pattern = "[-a-zA-Z0-9@:..." in
   fun label value =>
     if builtins.isStr value then
       if strings.isMatch value pattern then
@@ -726,9 +769,8 @@ let Url =
       contracts.blame
         (contracts.tag "not a string" label)$ in
 
-let mkUrls
-  | {url: #Url, pattern: Str} -> List #Url
-  = $...$
+let mkUrls | {url: #Url, pattern: Str} -> List #Url
+           = $...$
 \end{lstlisting}
 \end{frame}
 
@@ -786,13 +828,15 @@ NixPackage | doc "Interchange format" = {
 \begin{frame}{Summary}
     \begin{itemize}
         \item \couleur{orange-vivid-tangerine}{Reproducibility} is a concrete
-            and hard problem: Nix helps.
-        \item \couleur{orange-vivid-tangerine}{Functional programming} solves
-            a similar problem: let's use the same solutions!
-        \item What
+            and hard problem. Nix helps.
+        \item \couleur{orange-vivid-tangerine}{Nix expressions} have limitations. We started
+            \couleur{orange-vivid-tangerine}{Nickel} to overcome them.
+        \item There is a space for alternative type systems.
+            \couleur{orange-vivid-tangerine}{Gradual typing} and
+            \couleur{orange-vivid-tangerine}{first-class contracts} is an
+            exciting combo explored in Nickel.
         % \item \couleur{orange-vivid-tangerine}{Configuration languages} are
         %     interesting beasts that operate under different constraints. But the solutions developed are
-            \emph{broadly} interesting.
     \end{itemize}
     % \begin{block}{Reproducibility}
     %     {Reproducibility is a concrete and hard problem.
