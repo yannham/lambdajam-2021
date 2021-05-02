@@ -1,0 +1,37 @@
+Once upon a time, there was a brillant princess. She was a young and successful
+researcher in artificial intelligence.
+
+One night, she goes to the grand Kingdom University Bal. There, she encounters 
+a beautiful, radiant girl. They immediatly lock gazes and fall in love with each
+other.
+
+But when midnight strikes, the mysterious girl suddenly runs! The princess pulls
+out her phone and try to take a picture of her, but in the rush, she could only
+get her shoe.  That is probably not legal with respect to privacy, so please
+don't do that, but it is okay in this Kingdom.
+
+The princess languishes. But she remembers a paper that she recently reviewed,
+DeepShoe, which uses deep learning to reconstruct the github handle of a person
+from a simple picture of a shoe! How fortunate!
+
+Even more fortunate, the paper comes with code, a rarity. She downloads the
+repository. The tool requires Python, which she already has. Excited, she starts
+the script. But there's an problem. After reading the README, it turns out the script needs
+Python2, while she has Python3. She fears not, because the two can be installed
+on the same system. Using her system package manager, she installs python2, and tries again.
+
+The python bindings to opencv, an image processing library, are now missing.
+Using the python package manager pip, she installs it, and tries again. But it
+still fails, with the strangest error. After a lengthy investigation, she finds
+out the python bindings depends on a system installation of opencv 1.14, while
+she has 2.0 installed.
+
+To hell the other packages that depends on opencv! For love, she uninstalls the system
+package and tries to install the right version. She moves heaven and
+earth to find a solution. She tries to use her system package manager. She tries
+to install it from a script. She tries to build it from the repository. Without success.
+
+The end
+
+-- slides
+This is a sad story, but it is not an unchangeable fate.

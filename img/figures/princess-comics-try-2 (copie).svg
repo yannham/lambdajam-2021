@@ -330,7 +330,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.1629274"
+     inkscape:zoom="1.2142126"
      inkscape:cx="93.283519"
      inkscape:cy="50.486078"
      inkscape:document-units="mm"
@@ -355,7 +355,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -425,7 +425,40 @@
        id="path3193" />
     <text
        xml:space="preserve"
-       style="font-size:10.5833px;line-height:0.75;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       style="font-size:10.5833px;line-height:1.25;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="19.491583"
+       y="20.156084"
+       id="text3221"><tspan
+         sodipodi:role="line"
+         id="tspan3219"
+         x="19.491583"
+         y="20.156084"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">$python2 main.py</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:0.85;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="19.258749"
+       y="36.572308"
+       id="text3221-2"><tspan
+         sodipodi:role="line"
+         id="tspan3219-5"
+         x="19.258749"
+         y="36.572308"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"><tspan
+   style="fill:#ff3b5a"
+   id="tspan3273">Failed</tspan> <tspan
+   style="fill:#384558"
+   id="tspan3275">to import the</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="19.258749"
+         y="45.568111"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#384558;stroke-width:0.264583"
+         id="tspan3271"><tspan
+   style="fill:#5373cf"
+   id="tspan3328">opencv</tspan> module</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
        x="19.491583"
        y="11.131106"
        id="text3221-9"><tspan
@@ -433,49 +466,6 @@
          id="tspan3219-1"
          x="19.491583"
          y="11.131106"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#384558;stroke-width:0.264583">$python2 main.py</tspan><tspan
-         sodipodi:role="line"
-         x="19.491583"
-         y="19.068581"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#384558;stroke-width:0.264583"
-         id="tspan976"><tspan
-   style="fill:#ff3b5a"
-   id="tspan982">Failed</tspan> <tspan
-   style="fill:#898a8c"
-   id="tspan986">to import the</tspan></tspan><tspan
-         sodipodi:role="line"
-         x="19.491583"
-         y="27.006056"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#384558;stroke-width:0.264583"
-         id="tspan978"><tspan
-   style="fill:#5373cf"
-   id="tspan984">opencv</tspan> <tspan
-   style="fill:#898a8c"
-   id="tspan988">module</tspan></tspan><tspan
-         sodipodi:role="line"
-         x="19.491583"
-         y="34.943531"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#384558;stroke-width:0.264583"
-         id="tspan990" /><tspan
-         sodipodi:role="line"
-         x="19.491583"
-         y="42.881004"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#384558;stroke-width:0.264583"
-         id="tspan992">$pip2 install opencv-pyth</tspan><tspan
-         sodipodi:role="line"
-         x="19.491583"
-         y="50.818481"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#384558;stroke-width:0.264583"
-         id="tspan994">on</tspan><tspan
-         sodipodi:role="line"
-         x="19.491583"
-         y="58.755955"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-         id="tspan974" /><tspan
-         sodipodi:role="line"
-         x="19.491583"
-         y="66.693428"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-         id="tspan980" /></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">$install python2</tspan></text>
   </g>
 </svg>

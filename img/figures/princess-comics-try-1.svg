@@ -330,18 +330,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.2142126"
-     inkscape:cx="93.283519"
-     inkscape:cy="161.18213"
+     inkscape:zoom="1.6292062"
+     inkscape:cx="146.15844"
+     inkscape:cy="148.86357"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1016"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1770"
+     inkscape:window-height="752"
+     inkscape:window-x="93"
+     inkscape:window-y="226"
+     inkscape:window-maximized="0"
      inkscape:snap-global="false">
     <inkscape:grid
        type="xygrid"
@@ -355,7 +355,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -425,7 +425,7 @@
        id="path3193" />
     <text
        xml:space="preserve"
-       style="font-size:10.5833px;line-height:1.25;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       style="font-size:10.5833px;line-height:0.75;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
        x="19.491583"
        y="12.545146"
        id="text3221"><tspan
@@ -433,26 +433,35 @@
          id="tspan3219"
          x="19.491583"
          y="12.545146"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">$python main.py</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:10.5833px;line-height:0.85;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-       x="19.258749"
-       y="26.047825"
-       id="text3221-2"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#384558;stroke-width:0.264583">$python main.py</tspan><tspan
          sodipodi:role="line"
-         id="tspan3219-5"
-         x="19.258749"
-         y="26.047825"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"><tspan
+         x="19.491583"
+         y="20.48262"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#898a8c;stroke-width:0.264583"
+         id="tspan977"><tspan
    style="fill:#ff3b5a"
-   id="tspan3273">Failed</tspan> <tspan
-   style="fill:#384558"
-   id="tspan3275">to import the shoe</tspan></tspan><tspan
+   id="tspan987">Failed</tspan> to import the <tspan
+   style="fill:#5373cf"
+   id="tspan989">shoe</tspan></tspan><tspan
          sodipodi:role="line"
-         x="19.258749"
-         y="35.043629"
+         x="19.491583"
+         y="28.420095"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#898a8c;stroke-width:0.264583"
+         id="tspan979">module...</tspan><tspan
+         sodipodi:role="line"
+         x="19.491583"
+         y="36.357571"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#898a8c;stroke-width:0.264583"
+         id="tspan991" /><tspan
+         sodipodi:role="line"
+         x="19.491583"
+         y="44.295044"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#384558;stroke-width:0.264583"
-         id="tspan3271">module...</tspan></text>
+         id="tspan981">$install python2</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Helvetica Rounded';-inkscape-font-specification:'Helvetica Rounded, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#384558;stroke-width:0.264583"
+         sodipodi:role="line"
+         id="tspan985"
+         x="19.491583"
+         y="52.232521" /></text>
   </g>
 </svg>

@@ -218,57 +218,89 @@
         \huge \textgoth{Once upon a time...}
     }
     \only<2> {
-        \LARGE \textgoth{There was: a prince{s:}{s:}}
-        \includegraphics[width=0.9\textwidth]{img/works-on-my-machine.pdf}
+        \huge \textgoth{There was: a brilliant prince{s:}{s:}}
+        \begin{center}
+        \includegraphics[width=0.8\textwidth]{img/princess-comics-intro.pdf}
+        \end{center}
     }
     \only<3> {
-        \huge \textgoth{She goe{s:} to the Kingdom Univers:ity Bal}
-        \includegraphics[width=0.9\textwidth]{img/works-on-my-machine.pdf}
+        \huge \textgoth{One night, s:he goe{s:} to the Kingdom Univers:ity Bal}
+        \begin{center}
+        \includegraphics[width=0.8\textwidth]{img/princess-comics-bal.pdf}
+        \end{center}
     }
     \only<4> {
-        \huge \textgoth{Where s:he falls: in love with XXX}
-        \includegraphics[width=0.9\textwidth]{img/works-on-my-machine.pdf}
+        \huge \textgoth{Where s:he falls: in love with a my{s:}terious girl}
+        \begin{center}
+        \includegraphics[width=0.8\textwidth]{img/princess-comics-meeting.pdf}
+        \end{center}
     }
     \only<5> {
-        \huge \textgoth{But XXX s:uddenly run}
-        \includegraphics[width=0.9\textwidth]{img/works-on-my-machine.pdf}
+        \huge \textgoth{But when midnight {s:}trikes:, the girl s:uddenly runs:!}
+        \begin{center}
+        \includegraphics[width=0.8\textwidth]{img/princess-comics-escape.pdf}
+        \end{center}
     }
     \only<6> {
-        \huge \textgoth{She only has: a photo of her s:hoe}
-        \includegraphics[width=0.9\textwidth]{img/works-on-my-machine.pdf}
+        \huge \textgoth{She could only get a photo of her s:hoe}
+        \begin{center}
+        \includegraphics[width=0.8\textwidth]{img/princess-comics-shoe.pdf}
+        \end{center}
     }
     \only<7> {
-        \huge \textgoth{Thankgodfully, there's: the DeepShoe paper!}
-        \includegraphics[width=0.9\textwidth]{img/works-on-my-machine.pdf}
+        \huge \textgoth{Mercifully, there is: the DeepShoe paper!}
+        \begin{center}
+        \includegraphics[width=0.8\textwidth]{img/princess-comics-paper.pdf}
+        \end{center}
     }
     \only<8> {
-        \huge \textgoth{Which requires: Python...}
-        \includegraphics[width=0.9\textwidth]{img/works-on-my-machine.pdf}
+        \huge \textgoth{She downloads: the repos:itory, which requires: Python}
+        \begin{center}
+        \includegraphics[width=0.8\textwidth]{img/princess-comics-computer.pdf}
+        \end{center}
     }
     \only<9> {
-        \huge \textgoth{Actually Python2}
-        \includegraphics[width=0.9\textwidth]{img/works-on-my-machine.pdf}
+        \huge \textgoth{Well, Python2, actually}
+        \begin{center}
+        \includegraphics[width=0.8\textwidth]{img/princess-comics-try-1.pdf}
+        \end{center}
     }
     \only<10> {
-        \huge \textgoth{And opencv}
-        \includegraphics[width=0.9\textwidth]{img/works-on-my-machine.pdf}
+        \huge \textgoth{And the python binding{s:} to opencv as: well}
+        \begin{center}
+        \includegraphics[width=0.8\textwidth]{img/princess-comics-try-2.pdf}
+        \end{center}
     }
     \only<11> {
-        \huge \textgoth{Actually opencv-v1.14}
-        \includegraphics[width=0.9\textwidth]{img/works-on-my-machine.pdf}
+        \huge \textgoth{With opencv v1.14}
+        \begin{center}
+        \includegraphics[width=0.8\textwidth]{img/princess-comics-try-3.pdf}
+        \end{center}
     }
     \only<12> {
-        \huge \textgoth{But s:he already has: v2.0 installed}
-        \includegraphics[width=0.9\textwidth]{img/works-on-my-machine.pdf}
+        \huge \textgoth{She moves: heaven and earth}
+        \begin{center}
+        \includegraphics[width=0.8\textwidth]{img/princess-comics-try-5.pdf}
+        \end{center}
     }
     \only<13> {
-        \huge \textgoth{Etc.}
-        \includegraphics[width=0.9\textwidth]{img/works-on-my-machine.pdf}
+        \huge \textgoth{To find a s:olution}
+        \begin{center}
+        \includegraphics[width=0.8\textwidth]{img/princess-comics-try-6.pdf}
+        \end{center}
     }
     \only<14> {
+        \huge \textgoth{Without s:ucce{s:}{s:}}
         \begin{center}
-        \huge
-        \textgoth{The end}
+        \includegraphics[width=0.8\textwidth]{img/princess-comics-try-7.pdf}
+        \end{center}
+    }
+    \only<15> {
+        \begin{center}
+        \huge \textgoth{The end}
+        \end{center}
+        \begin{center}
+        \includegraphics[width=0.8\textwidth]{img/princess-comics-outro.pdf}
         \end{center}
     }
 \end{frame}
@@ -317,7 +349,7 @@
     \end{center}
 \end{frame}
 
-\section{Nix: the functional package manager}
+\section{Nix: the (pure) functional package manager}
 
 \begin{frame}
     \only<1> {
@@ -346,10 +378,10 @@ What if the princess had access to a version packaged by Nix?
 \end{frame}
 
 \begin{frame}[fragile]{Describing}
-\begin{lstlisting}[language=Nix,title={gh-from-shoe/defaut.nix}]
+\begin{lstlisting}[language=Nix,title={gh-from-shoe/default.nix}]
 {python2WithOpenCV, opencv, stdenv}:
 stdenv.mkDerivation rec {
-  pname = "gh-from-shoe-rust";
+  pname = "gh-from-shoe";
   version = "2021-04-30";
 
   buildInputs = [ python2WithOpenCV opencv ];
@@ -447,8 +479,8 @@ Derive(
             \item \couleur{dark-grey}{Put the result in the store}
             % \item<5> \couleur{blue-portage}{Profit}
             \item<1->
-                \only<1> { \couleur{blue-portage}{Profit!} }
-                \only<2-> { \couleur{dark-grey}{Profit!} }
+                \only<1> { \couleur{blue-portage}{Profit}: find love! }
+                \only<2-> { \couleur{dark-grey}{Profit: find love!}}
             \item<2-> \couleur{blue-portage}{Clean}
         \end{enumerate}
     \end{block}
@@ -504,30 +536,39 @@ Derive(
 \end{frame}
 
 \begin{frame}{Perks}
-    \begin{block}{Nix}
+    \begin{exampleblock}{}
         \begin{itemize}
             \item Declarative
             \item Reproducible
             \item Complete dependencies
             \item Fearless upgrades: atomic upgrades and rollbacks
         \end{itemize}
-    \end{block}
+    \end{exampleblock}
 \end{frame}
 
-\begin{frame}{Limits}
-    \begin{alertblock}{Nix}
+\begin{frame}{Usage examples}
+    \begin{itemize}
+        \item \couleur{blue-portage}{Nix}: package management
+        \item \couleur{blue-portage}{NixOS}: declarative system configuration
+        \item \couleur{blue-portage}{Nix shell}: project-specific environments
+        \item \couleur{blue-portage}{NixOps}: Nix-based cloud deployment
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Constraints}
+    \begin{alertblock}{}
         \begin{itemize}
             \item Steep learning curve
-            \item Everything has to be "Nixified" (Nixpkgs)
+            \item Everything has to be "Nixified"
         \end{itemize}
     \end{alertblock}
 \end{frame}
 
-\begin{frame}{Functional package management}
+\begin{frame}{Purely functional package management}
     \begin{center}
         \begin{tabular}{l|l}
             \couleur{blue-portage}{Nix} &
-            \couleur{orange-vivid-tangerine}{Functional programming} \\
+            \couleur{orange-vivid-tangerine}{Pure functional programming} \\
             \hline
             Read-only store & Immutability \\
             Hash addressing + sharing & Hash consing \\
@@ -538,30 +579,29 @@ Derive(
     \end{center}
 \end{frame}
 
-\begin{frame}{Usages}
-    \begin{itemize}
-        \item Package management
-        \item NixOS: declarative system configuration (NixOS)
-        \item Nix shell: project-specific environments
-    \end{itemize}
-\end{frame}
-
 \section{Nix expressions}
 
-\begin{frame}
+\begin{frame}{Epilogue}
+    The princess found love and now wants to use Nix for her own projects 
+\begin{center}
+\includegraphics[width=0.8\textwidth]{img/princess-comics-love.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Package as a function}
    Building a package should be a \couleur{blue-portage}{pure} function:
    use a functional programming language!
 \end{frame}
 
 \begin{frame}{Nix expressions}
-    \begin{block}{The Nix language}
+\begin{block}{The Nix language}
     \couleur{blue-portage}{JSON} $+$
-    \couleur{pink-froly}{$\lambda$}
+    \couleur{pink-froly}{$\lambda$ (higher-order functions)}
 \end{block}
 \end{frame}
 
 \begin{frame}[fragile]{Nix expressions}
-\begin{lstlisting}[language=Nix,title={gh-from-shoe/defaut.nix}]
+\begin{lstlisting}[language=Nix,title={gh-from-shoe/default.nix}]
 {python2WithOpenCV, opencv, stdenv}:
 $@stdenv.mkDerivation rec {
   pname = "gh-from-shoe-rust";
@@ -577,7 +617,7 @@ $@stdenv.mkDerivation rec {
 \end{lstlisting}
 \end{frame}
 
-\begin{frame}[fragile]{Derivation: Nix machine code}
+\begin{frame}[fragile]{Derivation: Nix object code}
 \begin{lstlisting}[title={/nix/store/27az7...gh-from-shoe-1-0.drv}]
 Derive(
   [("out","/nix/store/qya..-gh-from-shoe","","")],
@@ -595,16 +635,22 @@ Derive(
 
 \begin{frame}{State of affairs}
     Nix expressions outgrew their initial scope.
-
+    \begin{columns}
+    \begin{column}{0.65\textwidth}
     \begin{exampleblock}{In the wild}
       \begin{itemize}
+        \item Various user-defined abstractions
         \item Object systems (kind of): overriding
         \item A module system: NixOS
         \item Non-trivial algorithms (e.g. topological sort)
-        \item and so on.
       \end{itemize}
     \end{exampleblock}
     All of this without types!
+    \end{column}
+    \begin{column}{0.30\textwidth}
+        \includegraphics[height=0.7\textheight]{img/princess-comics-confused.pdf}
+    \end{column}
+\end{columns}
 \end{frame}
 
 \section{Nickel}
@@ -674,12 +720,12 @@ $}$
     By default, code is \couleur{pink-froly}{untyped}:
     \begin{itemize}
         \item Terminating \& fixed inputs
-        \item JSON interop
         \item Contracts for validation
+        \item JSON interop
     \end{itemize}
 
     \begin{exampleblock}{Example}
-\begin{lstlisting}[language=Nickel,title={Heterogeneous data}]
+\begin{lstlisting}[language=Nickel,title={Heterogeneous values}]
 services = [
   "init",
   {name = "firewall", bin = "/bin/firewall"},
@@ -752,7 +798,7 @@ let addSafe = fun x y =>
 \end{frame}
 
 \begin{frame}{Contracts, the invisible glue}
-  \makebox[\textwidth]{\includegraphics[width=\paperwidth]{img/screen-contract-error.png}}
+  \makebox[\textwidth]{\includegraphics[width=\paperwidth]{img/screen-contract-error-cropped.png}}
 \end{frame}
 
 \begin{frame}[fragile]{First-class contracts}
@@ -769,8 +815,7 @@ let Url = $let pattern = "[-a-zA-Z0-9@:..." in
       contracts.blame
         (contracts.tag "not a string" label)$ in
 
-let mkUrls | {url: #Url, pattern: Str} -> List #Url
-           = $...$
+let mkUrls | {url: #Url, pattern: Str} -> List #Url = $...$
 \end{lstlisting}
 \end{frame}
 
@@ -829,11 +874,11 @@ NixPackage | doc "Interchange format" = {
     \begin{itemize}
         \item \couleur{orange-vivid-tangerine}{Reproducibility} is a concrete
             and hard problem. Nix helps.
-        \item \couleur{orange-vivid-tangerine}{Nix expressions} have limitations. We started
-            \couleur{orange-vivid-tangerine}{Nickel} to overcome them.
-        \item There is a space for alternative type systems.
-            \couleur{orange-vivid-tangerine}{Gradual typing} and
-            \couleur{orange-vivid-tangerine}{first-class contracts} is an
+        \item Nix expressions have shortcomings. We started the
+            \couleur{blue-portage}{Nickel} in order to overcome them.
+        \item There is a design space for alternative type systems.
+            \couleur{pink-froly}{Gradual typing} and
+            \couleur{pink-froly}{first-class contracts} is an
             exciting combo explored in Nickel.
         % \item \couleur{orange-vivid-tangerine}{Configuration languages} are
         %     interesting beasts that operate under different constraints. But the solutions developed are
