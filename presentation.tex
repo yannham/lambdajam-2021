@@ -318,7 +318,7 @@
     \begin{alertblock}{Reproducibility}
     \begin{enumerate}
         \item<3-> Concrete and widespread
-        \item<4-> Not handled well by mainstream tools
+        \item<4-> Not addressed by mainstream tools
     \end{enumerate}
     \end{alertblock}
 }
@@ -366,6 +366,9 @@
 
 \begin{frame}
 What if the princess had access to a version packaged by Nix?
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{img/princess-comics-computer-nix.pdf}
+\end{center}
 \end{frame}
 
 \begin{frame}
@@ -457,11 +460,6 @@ Derive(
     \includegraphics[height=0.98\textheight]{img/schema-nix-store-link.pdf}
 \end{center}
 }
-    \only<3> {
-    \begin{center}
-        \includegraphics[height=0.98\textheight]{img/schema-nix-store-sharing.pdf}
-    \end{center}
-}
 \end{frame}
 
 % \begin{frame}{Sharing}
@@ -489,50 +487,86 @@ Derive(
 \begin{frame}{Cleaning}
     \only<1> {
         \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-1.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-1.pdf}
         \end{center}
     }
     \only<2> {
         \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-2.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-2.pdf}
         \end{center}
     }
     \only<3> {
         \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-3.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-3.pdf}
         \end{center}
     }
     \only<4> {
         \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-4.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-4.pdf}
         \end{center}
      }
-
     \only<5> {
         \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-roots.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-4-bis.pdf}
         \end{center}
     }
     \only<6> {
         \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-1.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-5.pdf}
         \end{center}
     }
     \only<7> {
         \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-2.pdf}
+            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-6.pdf}
         \end{center}
     }
-    \only<8> {
-        \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-3.pdf}
-        \end{center}
-    }
-    \only<9> {
-        \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-4.pdf}
-        \end{center}
-    }
+
+    % \only<1> {
+    %     \begin{center}
+    %         \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-1.pdf}
+    %     \end{center}
+    % }
+    % \only<2> {
+    %     \begin{center}
+    %         \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-2.pdf}
+    %     \end{center}
+    % }
+    % \only<3> {
+    %     \begin{center}
+    %         \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-3.pdf}
+    %     \end{center}
+    % }
+    % \only<4> {
+    %     \begin{center}
+    %         \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-4.pdf}
+    %     \end{center}
+    %  }
+    %
+    % \only<5> {
+    %     \begin{center}
+    %         \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-roots.pdf}
+    %     \end{center}
+    % }
+    % \only<6> {
+    %     \begin{center}
+    %         \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-1.pdf}
+    %     \end{center}
+    % }
+    % \only<7> {
+    %     \begin{center}
+    %         \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-2.pdf}
+    %     \end{center}
+    % }
+    % \only<8> {
+    %     \begin{center}
+    %         \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-3.pdf}
+    %     \end{center}
+    % }
+    % \only<9> {
+    %     \begin{center}
+    %         \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-4.pdf}
+    %     \end{center}
+    % }
 \end{frame}
 
 \begin{frame}{Perks}
@@ -661,7 +695,8 @@ Derive(
             \item Gradual typing
             \item Run-time contracts
             \item Recursive records merge system
-            \item Stand-alone language (Terraform, Kubernetes, etc.)
+            \item Stand-alone language: free us from YAML templating!
+                (Terraform, Kubernetes, build systems, etc.)
         \end{itemize}
     \end{block}
 \end{frame}
@@ -875,7 +910,7 @@ NixPackage | doc "Interchange format" = {
         \item \couleur{orange-vivid-tangerine}{Reproducibility} is a concrete
             and hard problem. Nix helps.
         \item Nix expressions have shortcomings. We started the
-            \couleur{blue-portage}{Nickel} in order to overcome them.
+            \couleur{blue-portage}{Nickel} language to overcome them.
         \item There is a design space for alternative type systems.
             \couleur{pink-froly}{Gradual typing} and
             \couleur{pink-froly}{first-class contracts} is an
@@ -917,7 +952,9 @@ NixPackage | doc "Interchange format" = {
     \end{description}
 \end{frame}
 
-\begin{frame}{Links}
+\begin{frame}{The end}
+    \begin{columns}
+    \begin{column}{0.69\textwidth}
     \begin{description}
         \item[Nickel] https://github.com/tweag/nickel/
         \item[Nix] https://nixos.org/
@@ -930,6 +967,11 @@ NixPackage | doc "Interchange format" = {
         \item hello@tweag.io
         \end{itemize}
     \end{block}
+    \end{column}
+    \begin{column}{0.30\textwidth}
+        \includegraphics[height=0.7\textheight]{img/princess-comics-bye.pdf}
+    \end{column}
+\end{columns}
 \end{frame}
 
 \end{document}
