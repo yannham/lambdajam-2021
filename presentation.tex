@@ -372,7 +372,7 @@ What if the princess had access to a version packaged by Nix?
 \end{frame}
 
 \begin{frame}
-    \begin{block}{Principles}
+    \begin{block}{Steps}
         \begin{enumerate}
             \item<2-> \couleur{blue-portage}{Describe} a package and its
                 dependencies in full
@@ -414,7 +414,7 @@ Derive(
 \end{frame}
 
 \begin{frame}
-    \begin{block}{Principles}
+    \begin{block}{Steps}
         \begin{enumerate}
             \item \couleur{dark-grey}{Describe a package and its
                 dependencies in full}
@@ -435,7 +435,7 @@ Derive(
 \end{frame}
 
 \begin{frame}
-    \begin{block}{Principles}
+    \begin{block}{Steps}
         \begin{enumerate}
             \item
                 \couleur{dark-grey}{Describe a package and its
@@ -469,58 +469,55 @@ Derive(
 % \end{frame}
 
 \begin{frame}
-    \begin{block}{Principles}
+    \begin{block}{Steps}
         \begin{enumerate}
             \item \couleur{dark-grey}{Describe a package and its
                 dependencies in full}
             \item \couleur{dark-grey}{Build it in isolation}
             \item \couleur{dark-grey}{Put the result in the store}
             % \item<5> \couleur{blue-portage}{Profit}
-            \item<1->
-                \only<1> { \couleur{blue-portage}{Profit}: find love! }
-                \only<2-> { \couleur{dark-grey}{Profit: find love!}}
-            \item<2-> \couleur{blue-portage}{Clean}
+            \item \couleur{blue-portage}{Profit}: find love!
         \end{enumerate}
     \end{block}
 \end{frame}
 
-\begin{frame}{Cleaning}
-    \only<1> {
-        \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-1.pdf}
-        \end{center}
-    }
-    \only<2> {
-        \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-2.pdf}
-        \end{center}
-    }
-    \only<3> {
-        \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-3.pdf}
-        \end{center}
-    }
-    \only<4> {
-        \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-4.pdf}
-        \end{center}
-     }
-    \only<5> {
-        \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-4-bis.pdf}
-        \end{center}
-    }
-    \only<6> {
-        \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-5.pdf}
-        \end{center}
-    }
-    \only<7> {
-        \begin{center}
-            \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-6.pdf}
-        \end{center}
-    }
-
+% \begin{frame}{Cleaning}
+%     \only<1> {
+%         \begin{center}
+%             \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-1.pdf}
+%         \end{center}
+%     }
+%     \only<2> {
+%         \begin{center}
+%             \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-2.pdf}
+%         \end{center}
+%     }
+%     \only<3> {
+%         \begin{center}
+%             \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-3.pdf}
+%         \end{center}
+%     }
+%     \only<4> {
+%         \begin{center}
+%             \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-4.pdf}
+%         \end{center}
+%      }
+%     \only<5> {
+%         \begin{center}
+%             \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-4-bis.pdf}
+%         \end{center}
+%     }
+%     \only<6> {
+%         \begin{center}
+%             \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-5.pdf}
+%         \end{center}
+%     }
+%     \only<7> {
+%         \begin{center}
+%             \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-v2-6.pdf}
+%         \end{center}
+%     }
+%
     % \only<1> {
     %     \begin{center}
     %         \includegraphics[height=0.98\textheight]{img/schema-nix-store-cleaning-1.pdf}
@@ -567,13 +564,13 @@ Derive(
     %         \includegraphics[height=0.98\textheight]{img/schema-nix-store-gc-4.pdf}
     %     \end{center}
     % }
-\end{frame}
+% \end{frame}
 
 \begin{frame}{Perks}
     \begin{exampleblock}{}
         \begin{itemize}
-            \item Declarative
             \item Reproducible
+            \item Declarative
             \item Complete dependencies
             \item Fearless upgrades: atomic upgrades and rollbacks
         \end{itemize}
@@ -828,7 +825,7 @@ let safeNum = fun value =>
 let addSafe = fun x y =>
   let safeX = safeNum x in
   let safeY = safeNum y in
-  safeNum (safeX + safeY)
+  safeNum (add safeX safeY)
 \end{lstlisting}
 \end{frame}
 

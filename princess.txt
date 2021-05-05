@@ -18,7 +18,7 @@ Excited, she starts the script. But there's a problem. She figures out she needs
 Python2, but has Python3. The two can coexit, and using her system package
 manager, she installs python2, and tries again.
 
-Nox, the python bindings to opencv, an image processing library, are now missing.
+Now, the python bindings to opencv, an image processing library, are now missing.
 Using the python package manager, she installs it, and tries again. But it
 still fails with the strangest error. After a lengthy investigation, she finds
 out the python bindings depends on a system installation of opencv 1.14, while
@@ -42,4 +42,41 @@ This is a sad story, but it is not an unchangeable fate.
 3
 moral
 
+reproducibility which I will loosely define as the ability (pause) to reproduce
+the process of building and running a program on any system that meet the basic
+requirements.
+
+system package manager: aptitude, pacman, homebrew that handle global
+installation and not project specific one
+
 4. pass directly, simplify
+
+15. discours commit
+
+  . limits : reword
+
+Nix Expressions (What to say)
+
+22. dont speak functional programming before.
+
+23. JSON + Lambda: discourse
+
+24. inputs are dependencies
+
+26. discourse (NixOS module system, blah)
+
+27. discourse: Nickel is spin-off of the Nix language which tries to overcome
+its shortcomings.
+
+Configuration languages parts?
+
+28. Contrat / Schema
+
+33. "If we don't do anything more, blah, whatever?" -> discourse on if we don't
+do something else
+
+34. To solve this problem?
+
+35. and the contract location definition
+
+36-37 transition to custom contracts
